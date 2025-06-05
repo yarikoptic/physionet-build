@@ -21,3 +21,9 @@ TEST_DEFAULTS = {
     'project_slug': 'demoeicu',
     'version': '2.0.0',
 }
+
+TEST_CASES = {
+    'published_project_sha256sums': {
+        '_user_': 'rgmark',  # User with access to the project
+    },
+}
