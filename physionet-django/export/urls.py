@@ -12,6 +12,8 @@ urlpatterns = [
          name='published_project_versions'),
     path('v1/project/published/<str:project_slug>/<str:version>/', views.PublishedProjectDetail.as_view(),
          name='published_project_detail'),
+    path('v1/project/published/<str:project_slug>/<str:version>/sha256sums/', views.ProjectSHA256Sums.as_view(),
+         name='published_project_sha256sums'),
 ]
 
 # Parameters for testing URLs (see physionet/test_urls.py)
